@@ -8,10 +8,16 @@ function App() {
 
   return (
     <>
-      <div>
-        <img src={constructionBanner} className="construction-banner" alt="Under Construction Banner" />
+      <div className='container'>
+        <div className='row'>
+          <img src={constructionBanner} className="construction-banner" alt="Under Construction Banner" />
+        </div>
         <img src={constructionIcon} className="construction-icon" alt="Under construction icon" />
-        <img src={constructionBanner} className="construction-banner" alt="Under Construction Banner" />
+        <img src={constructionIcon} className="construction-icon" alt="Under construction icon" />
+        <img src={constructionIcon} className="construction-icon" alt="Under construction icon" />
+        <div className='row'>
+          <img src={constructionBanner} className="construction-banner" alt="Under Construction Banner" />
+        </div>
       </div>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
