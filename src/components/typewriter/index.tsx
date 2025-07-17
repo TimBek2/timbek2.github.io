@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import './style.scss';
+import './style.css';
 
 interface TypewriterProps {
   text: string;

@@ -1,5 +1,5 @@
 import Typewriter from "../typewriter";
-import './style.scss';
+import './style.css';
 
 const Hero = () => {
   return (
