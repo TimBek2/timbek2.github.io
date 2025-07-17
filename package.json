@@ -1,6 +1,6 @@
 {
   "name": "timbek2.github.io",
-  "homepage": "https://<USERNAME>.github.io/",
+  "homepage": "https://timbek2.github.io/",
   "description": "A React project using Vite and TypeScript",
   "author": "Timbek2",
   "private": true,
@@ -10,7 +10,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.0",
