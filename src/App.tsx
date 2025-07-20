@@ -3,6 +3,7 @@ import constructionBanner from './assets/under_construction.gif'
 import constructionIcon from './assets/under-construction-90s.gif'
 import './App.css'
 import Hero from './components/hero'
+import About from './components/about'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <Hero />
+      <About />
       <div className='container'>
         <div className='row'>
           <img src={constructionBanner} className="construction-banner" alt="Under Construction Banner" />
