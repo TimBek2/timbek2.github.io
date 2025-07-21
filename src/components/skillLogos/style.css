@@ -1,0 +1,13 @@
+.skill-logos {
+  margin-bottom: 20px;;
+  .tilt {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 260px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,10 +1,10 @@
-import Tilt from 'react-parallax-tilt';
+import SkillLogos from '../skillLogos';
 import './style.css';
 
 const About = () => {
   return (
-    <section className="about">
-      <>
+    <>
+      <section className="about">
         <h2>About Me</h2>
         <p>
           Hi, I'm Tim. I'm a software engineer living in Brooklyn.
@@ -19,11 +19,9 @@ const About = () => {
         <p>
           I've also built a few cutting boards and a coffee table, with some more ideas that are probably too ambitious.
         </p>
-      </>
-      <div className='row'>
-        <Tilt />
-      </div>
-    </section>
+      </section>
+      <SkillLogos />
+    </>
   );
 };
 
