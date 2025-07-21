@@ -8,11 +8,11 @@ import './style.css';
 
 const SkillLogos = () => {
   const tiltSettings = {
-    tiltMaxAngleX: 35,
-    tiltMaxAngleY: 35,
+    tiltMaxAngleX: 25,
+    tiltMaxAngleY: 25,
     glareEnable: true,
     glareMaxOpacity: 0.5,
-    glareColor: 'red',
+    glareColor: '#bb9af7',
     glarePosition: 'all' as const,
   }
   return (
@@ -29,7 +29,7 @@ const SkillLogos = () => {
       <Tilt className="tilt" {...tiltSettings}>
         <img src={rubyLogo} alt="Ruby Logo" />
       </Tilt>
-      <Tilt className="tilt" {...tiltSettings}>
+      <Tilt className="tilt rails-logo" {...tiltSettings}>
         <img src={railsLogo} alt="Rails Logo" />
       </Tilt>
     </div>
