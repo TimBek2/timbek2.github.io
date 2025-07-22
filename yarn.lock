@@ -1523,6 +1523,11 @@ react-dom@^19.1.0:
   dependencies:
     scheduler "^0.26.0"
 
+react-parallax-tilt@^1.7.301:
+  version "1.7.301"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.7.301.tgz#bb45a3acdf62d890d6953f66caf2738400bbd083"
+  integrity sha512-osc9aoajdlNzZcQQxkaamJT5oFpA2CO9C8MLFFKw1riVx6aU3KSnfJcz0QCzahb0NvNt+eIRXh2Z7C+HioPyqw==
+
 react-refresh@^0.17.0:
   version "0.17.0"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.17.0.tgz"

@@ -1,0 +1,19 @@
+.skill-logos {
+  margin-bottom: 20px;
+  .tilt {
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    height: 210px;
+
+    &.rails-logo {
+      align-self: center;
+      height: 120px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
