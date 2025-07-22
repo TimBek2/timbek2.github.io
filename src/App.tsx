@@ -4,6 +4,7 @@ import constructionIcon from './assets/under-construction-90s.gif'
 import './App.css'
 import Hero from './components/hero'
 import About from './components/about'
+import Experience from './components/experience'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +26,7 @@ function App() {
       </div>
       <Hero />
       <About />
+      <Experience />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
