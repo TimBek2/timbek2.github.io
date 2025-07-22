@@ -12,7 +12,7 @@ const SkillLogos = () => {
     tiltMaxAngleY: 25,
     glareEnable: true,
     glareMaxOpacity: 0.5,
-    glareColor: '#bb9af7',
+    glareColor: '#cfc9c2',
     glarePosition: 'all' as const,
   }
   return (

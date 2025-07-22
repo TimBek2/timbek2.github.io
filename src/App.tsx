@@ -10,22 +10,21 @@ function App() {
 
   return (
     <>
-      <Hero />
-      <About />
       <div className='container'>
         <div className='row'>
           <img src={constructionBanner} className="construction-banner" alt="Under Construction Banner" />
         </div>
-        <img src={constructionIcon} className="construction-icon" alt="Under construction icon" />
-        <img src={constructionIcon} className="construction-icon" alt="Under construction icon" />
-        <img src={constructionIcon} className="construction-icon" alt="Under construction icon" />
+        <div className='row'>
+          <img src={constructionIcon} className="construction-icon" alt="Under construction icon" />
+          <img src={constructionIcon} className="construction-icon" alt="Under construction icon" />
+          <img src={constructionIcon} className="construction-icon" alt="Under construction icon" />
+        </div>
         <div className='row'>
           <img src={constructionBanner} className="construction-banner" alt="Under Construction Banner" />
         </div>
       </div>
-      <p className="coming-soon">
-        Check back soon to see what I've become!
-      </p>
+      <Hero />
+      <About />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

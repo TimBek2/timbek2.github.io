@@ -2,9 +2,14 @@ body {
   --background: #1a1b26;
   --h-line: #a9b1d6;
   --border: #bb9af7;
+  --section-bg: #565f89;
   --text: #c0caf5;
   --link-color: #b4f9f8;
   --link-hover: #73daca;
+  --button-bg: #646cff;
+  --button-click: #7aa2f7;
+  --button-hover: #2ac3de;
+  --tan: #cfc9c2;
   margin: 0;
   background-color: var(--background);
   display: flex;
@@ -53,16 +58,20 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--button-bg);
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: background-color 0.3s ease;
+
+  &:active,
+  &:focus,
+  &:focus-visible {
+    background-color: var(--button-click);
+    border-color: var(--button-click);
+  }
+  &:hover {
+    background-color: var(--button-hover);
+    border-color: var(--button-hover);
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -74,6 +83,6 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: var(--button-bg);
   }
 }
