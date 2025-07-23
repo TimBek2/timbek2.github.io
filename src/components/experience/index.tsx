@@ -23,7 +23,7 @@ const Experience = () => {
           >
             <h3 className="vertical-timeline-element-title">{experience.title}</h3>
             <div className="vertical-timeline-row row">
-              <h4 className="vertical-timeline-element-subtitle">{experience.companyName}</h4>
+              <a className="vertical-timeline-element-subtitle" href={`${experience.companyLink}`} target="_blank">{experience.companyName}</a>
               <h5 className="vertical-timeline-element-location">{experience.location}</h5>
             </div>
             <ul>

@@ -23,6 +23,14 @@
       display: inline-block;
       margin: 0;
     }
+    .vertical-timeline-element-subtitle {
+      color: white;
+      font-weight: 700;
+
+      &:hover {
+        color: var(--link-hover);
+      }
+    }
   }
 
   .vertical-timeline-element-icon {

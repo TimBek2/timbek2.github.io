@@ -5,6 +5,7 @@ import juiceCg from '../assets/juice-logo.svg';
 export interface Experience {
   title: string;
   companyName: string;
+  companyLink: string;
   location: string;
   icon: string;
   iconClass?: string;
@@ -16,6 +17,7 @@ const experiences: Experience[] = [
   {
     title: "Software Engineer",
     companyName: "Hubble Contacts",
+    companyLink: "https://hubblecontacts.com",
     location: "New York, NY",
     icon: hubbleContacts,
     iconClass: '',
@@ -30,6 +32,7 @@ const experiences: Experience[] = [
   {
     title: "Technical Advisor",
     companyName: "Juice Creative Group",
+    companyLink: "https://juicecg.com",
     location: "Norwalk, CT",
     icon: juiceCg,
     iconClass: 'square',
@@ -43,6 +46,7 @@ const experiences: Experience[] = [
   {
     title: "Web Developer",
     companyName: "Shift Lab",
+    companyLink: "https://shiftlab.co",
     location: "New York, NY",
     icon: shiftLab,
     iconClass: 'square',
