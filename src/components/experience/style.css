@@ -4,7 +4,14 @@
   margin: 0 auto 20px;
   max-width: 800px;
   padding: 20px;
-  text-align: center;
+
+  h2 {
+    text-align: center;
+  }
+
+  h3, h4 {
+    padding-left: 30px;
+  }
 
   .vertical-timeline-element-icon {
     background: 'none',
@@ -15,9 +22,12 @@
     border-radius: 4px;
   }
 
-
   .vertical-timeline-element-content {
     box-shadow: none;
+
+    ul {
+      padding: 0 30px;
+    }
   }
   .work-icon {
     width: 100%;
