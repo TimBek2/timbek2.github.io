@@ -1,7 +1,23 @@
 .about {
-  background-color: var(--section-bg);
-  border-radius: 8px;
   margin-bottom: 20px;
-  max-width: 800px;
-  padding: 20px;
+  .about-content {
+    background-color: var(--section-bg);
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 3.125%;;
+    max-width: 800px;
+    padding: 20px;
+    width: 62.5%;
+  }
+  .about-image {
+    display: inline-block;
+    max-width: 440px;
+    width: 34.375%;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  }
 }
