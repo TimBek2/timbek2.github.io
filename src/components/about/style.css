@@ -1,18 +1,23 @@
 .about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   margin-bottom: 20px;
+
   .about-content {
     background-color: var(--section-bg);
     border-radius: 8px;
     display: inline-block;
-    margin-right: 3.125%;;
-    max-width: 800px;
+    max-width: 780px;
     padding: 20px;
-    width: 62.5%;
+    width: 60%;
   }
+
   .about-image {
     display: inline-block;
     max-width: 440px;
-    width: 34.375%;
+    width: 34%;
 
     img {
       max-width: 100%;
