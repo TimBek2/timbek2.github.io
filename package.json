@@ -15,11 +15,13 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@types/react-slick": "^0.23.13",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "prop-types": "^15.8.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-parallax-tilt": "^1.7.301",
+    "react-slick": "^0.30.3",
     "react-vertical-timeline-component": "^3.5.3"
   },
   "devDependencies": {
