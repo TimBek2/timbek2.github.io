@@ -6,11 +6,18 @@
   padding: 20px;
   text-align: center;
 
-  .vertical-timeline-element-icon.square {
+  .vertical-timeline-element-icon {
+    background: 'none',
+  }
+
+  .vertical-timeline-element-icon:has(> img.square) {
+    background-color: black;
     border-radius: 4px;
   }
+
+
   .vertical-timeline-element-content {
-    /* box-shadow: none; */
+    box-shadow: none;
   }
   .work-icon {
     width: 100%;
