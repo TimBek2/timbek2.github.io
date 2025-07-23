@@ -22,7 +22,10 @@ const Experience = () => {
             icon={<img src={experience.icon} alt={`${experience.companyName} Logo`} className={`work-icon ${experience.iconClass}`} />}
           >
             <h3 className="vertical-timeline-element-title">{experience.title}</h3>
-            <h4 className="vertical-timeline-element-subtitle">{experience.location}</h4>
+            <div className="vertical-timeline-row row">
+              <h4 className="vertical-timeline-element-subtitle">{experience.companyName}</h4>
+              <h5 className="vertical-timeline-element-location">{experience.location}</h5>
+            </div>
             <ul>
               {experience.points.map((point, pointIndex) => (
                 <li key={pointIndex}>{point}</li>

@@ -1,4 +1,5 @@
 .skill-logos {
+  gap: 20px;
   margin-bottom: 20px;
   .tilt {
     padding: 10px;

@@ -9,8 +9,20 @@
     text-align: center;
   }
 
-  h3, h4 {
+  .vertical-timeline-element-title,
+  .vertical-timeline-row {
     padding-left: 30px;
+  }
+
+  .vertical-timeline-row {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .vertical-timeline-element-subtitle,
+    .vertical-timeline-element-location {
+      display: inline-block;
+      margin: 0;
+    }
   }
 
   .vertical-timeline-element-icon {
