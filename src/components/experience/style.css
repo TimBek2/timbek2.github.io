@@ -6,7 +6,13 @@
   padding: 20px;
   text-align: center;
 
-  .vertical-timeline-element-icon {
-    border-radius: 4px;;
+  .vertical-timeline-element-icon.square {
+    border-radius: 4px;
+  }
+  .vertical-timeline-element-content {
+    /* box-shadow: none; */
+  }
+  .work-icon {
+    width: 100%;
   }
 }
