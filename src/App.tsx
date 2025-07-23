@@ -1,13 +1,11 @@
-import { useState } from 'react'
 import constructionBanner from './assets/under_construction.gif'
 import constructionIcon from './assets/under-construction-90s.gif'
 import './App.css'
 import Hero from './components/hero'
 import About from './components/about'
+import Experience from './components/experience'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div className='container'>
@@ -25,11 +23,7 @@ function App() {
       </div>
       <Hero />
       <About />
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <Experience />
     </>
   )
 }
