@@ -5,9 +5,8 @@ import './style.css';
 const About = () => {
   const flickityOptions = {
     initialIndex: 0,
-    draggable: true,
+    draggable: false,
     pageDots: false,
-    freescroll: false,
     wrapAround: true,
     contain: true,
     fade: true,
