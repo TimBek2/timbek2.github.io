@@ -1,8 +1,6 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
 // import Navigation from 'swiper';
 // Import Swiper styles
-import './swiper.css';
 import './style.css';
 
 const About = () => {
@@ -26,21 +24,7 @@ const About = () => {
           </p>
         </div>
         <div className='about-image'>
-          <Swiper
-            spaceBetween={50}
-            slidesPerView={1}
-            pagination={{ clickable: true }}
-            navigation>
-            <SwiperSlide>
-              <img src="https://placehold.co/600x400" alt="Placeholder Image" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://placehold.co/600x400" alt="Placeholder Image" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://placehold.co/600x400" alt="Placeholder Image" />
-            </SwiperSlide>
-          </Swiper>
+
         </div>
       </section>
     </>
