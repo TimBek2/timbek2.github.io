@@ -1,9 +1,17 @@
-// Import Swiper React components
-// import Navigation from 'swiper';
-// Import Swiper styles
+import Flickity from 'react-flickity-component'
+import './flickity.css'
 import './style.css';
 
 const About = () => {
+  const flickityOptions = {
+    initialIndex: 0,
+    draggable: true,
+    pageDots: false,
+    freescroll: false,
+    wrapAround: true,
+    contain: true,
+    fade: true,
+  }
   return (
     <>
       <section className="about">
@@ -24,7 +32,18 @@ const About = () => {
           </p>
         </div>
         <div className='about-image'>
-
+          <Flickity
+            className={'flickity-carousel'}
+            elementType={'div'}
+            options={flickityOptions}
+            disableImagesLoaded
+            reloadOnUpdate
+            static
+          >
+            <img src="https://placehold.co/600x400" alt="Tim Beck" />
+            <img src="https://placehold.co/600x400" alt="Tim Beck" />
+            <img src="https://placehold.co/600x400" alt="Tim Beck" />
+          </Flickity>
         </div>
       </section>
     </>

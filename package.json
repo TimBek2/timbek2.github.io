@@ -16,9 +16,11 @@
   },
   "dependencies": {
     "@types/react-vertical-timeline-component": "^3.3.6",
+    "flickity": "2.3.0",
     "prop-types": "^15.8.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-flickity-component": "^5.0.0",
     "react-parallax-tilt": "^1.7.301",
     "react-vertical-timeline-component": "^3.5.3"
   },
