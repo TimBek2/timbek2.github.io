@@ -25,8 +25,8 @@ const experiences: Experience[] = [
     points: [
       "Initially worked on a custom Shopify front end that integrated with a Rails back end for data management",
       "Helped design and implement transition to Shopify as a headless CMS, a Node/React-based front end, and maintaining legacy Rails app for database purposes",
-      "Became one of two lead front end developers, personally handling all intake pages, analytics, accessibility, and internationalization",
-      "Led the front end efforts to develop and launch a new product line, prescription glasses and sunglasses"
+      "Became one of two lead front end developers, led the front end efforts to develop and launch a new product line, prescription glasses and sunglasses",
+      "Personally handled all intake pages, analytics, accessibility, and internationalization"
     ],
   },
   {

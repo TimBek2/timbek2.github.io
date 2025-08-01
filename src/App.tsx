@@ -1,5 +1,3 @@
-import constructionBanner from './assets/under_construction.gif'
-import constructionIcon from './assets/under-construction-90s.gif'
 import './App.css'
 import Hero from './components/hero'
 import About from './components/about'
@@ -9,19 +7,6 @@ import Experience from './components/experience'
 function App() {
   return (
     <>
-      <div className='container'>
-        <div className='row'>
-          <img src={constructionBanner} className="construction-banner" alt="Under Construction Banner" />
-        </div>
-        <div className='row'>
-          <img src={constructionIcon} className="construction-icon" alt="Under construction icon" />
-          <img src={constructionIcon} className="construction-icon" alt="Under construction icon" />
-          <img src={constructionIcon} className="construction-icon" alt="Under construction icon" />
-        </div>
-        <div className='row'>
-          <img src={constructionBanner} className="construction-banner" alt="Under Construction Banner" />
-        </div>
-      </div>
       <Hero />
       <About />
       <SkillLogos />

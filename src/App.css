@@ -19,19 +19,3 @@
   padding: 2em;
 }
 
-.construction-banner {
-  height: auto;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-.construction-icon {
-  display: inline-block;
-  height: auto;
-  margin: 1rem auto;
-  width: 100px;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.construction-icon:hover {
-  filter: drop-shadow(0 0 2em #424242aa);
-}
