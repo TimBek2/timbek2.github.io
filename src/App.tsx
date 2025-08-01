@@ -3,6 +3,7 @@ import constructionIcon from './assets/under-construction-90s.gif'
 import './App.css'
 import Hero from './components/hero'
 import About from './components/about'
+import SkillLogos from './components/skillLogos';
 import Experience from './components/experience'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       </div>
       <Hero />
       <About />
+      <SkillLogos />
       <Experience />
     </>
   )
