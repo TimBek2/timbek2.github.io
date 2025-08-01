@@ -16,7 +16,7 @@ const SkillLogos = () => {
     glarePosition: 'all' as const,
   }
   return (
-    <div className="skill-logos row">
+    <section className="skill-logos row">
       <Tilt className="tilt" {...tiltSettings}>
         <img src={jsLogo} alt="JavaScript Logo" />
       </Tilt>
@@ -32,7 +32,7 @@ const SkillLogos = () => {
       <Tilt className="tilt rails-logo" {...tiltSettings}>
         <img src={railsLogo} alt="Rails Logo" />
       </Tilt>
-    </div>
+    </section>
   );
 };
 

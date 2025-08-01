@@ -7,8 +7,10 @@ import Experience from './components/experience'
 function App() {
   return (
     <>
-      <Hero />
-      <About />
+      <div className='bg-wrapper'>
+        <Hero />
+        <About />
+      </div>
       <SkillLogos />
       <Experience />
     </>
