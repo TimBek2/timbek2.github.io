@@ -1,7 +1,13 @@
 #root {
+  margin: 0 auto;
+  width: 100%;
+}
+
+section {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 0;
+  /* padding: 2rem; */
 }
 
 .container {
@@ -17,5 +23,10 @@
 
 .card {
   padding: 2em;
+}
+
+.bg-wrapper {
+  background-image: linear-gradient(to bottom, rgba(26, 27, 38, 0), rgba(26, 27, 38, 1)),
+  url("./assets/bg.jpg");
 }
 
