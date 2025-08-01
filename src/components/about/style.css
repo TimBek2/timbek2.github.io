@@ -15,14 +15,36 @@
   }
 
   .about-image {
+    border-radius: 8px;
     display: inline-block;
     max-width: 440px;
     width: 34%;
 
+    .embla {
+      overflow: hidden;
+      border-radius: inherit;
+    }
+    .embla__container {
+      border-radius: inherit;
+      display: flex;
+    }
+    .embla__slide {
+      border-radius: inherit;
+      min-width: 0;
+      height: 100%;
+      display: flex;
+      flex: 0 0 100%;
+      justify-content: center;
+    }
+
     img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    .slide-image {
+      border-radius: inherit;
+      width: 100%;
     }
   }
 }

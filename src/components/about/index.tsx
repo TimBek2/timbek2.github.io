@@ -1,16 +1,50 @@
-import Flickity from 'react-flickity-component'
-import './flickity.css'
+import { useCallback } from 'react';
+import useEmblaCarousel, {
+  type UseEmblaCarouselType
+} from 'embla-carousel-react';
+import Fade from 'embla-carousel-fade';
+import capri from '../../assets/tim_capri.jpeg';
+import kananaskis from '../../assets/tim_kananaskis.jpeg';
+import duomo from '../../assets/tim_duomo.jpeg';
 import './style.css';
 
+export function EmblaCarousel() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({loop: true, watchDrag: false}, [Fade()])
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev()
+  }, [emblaApi])
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext()
+  }, [emblaApi])
+
+  return (
+    <div className="embla">
+      <div className="embla__viewport" ref={emblaRef}>
+        <div className="embla__container">
+          <div className="embla__slide">
+            <img className="slide-image" src={capri} alt="Me in Anacapri" />
+          </div>
+          <div className="embla__slide">
+            <img className="slide-image" src={kananaskis} alt="Me in Canada near Banff" />
+          </div>
+          <div className="embla__slide">
+            <img className="slide-image" src={duomo} alt="Me in Milan at the Duomo" />
+          </div>
+        </div>
+      </div>
+      <button className="embla__prev" onClick={scrollPrev}>
+        Prev
+      </button>
+      <button className="embla__next" onClick={scrollNext}>
+        Next
+      </button>
+    </div>
+  )
+}
+
 const About = () => {
-  const flickityOptions = {
-    initialIndex: 0,
-    draggable: false,
-    pageDots: false,
-    wrapAround: true,
-    contain: true,
-    fade: true,
-  }
   return (
     <>
       <section className="about">
@@ -31,18 +65,7 @@ const About = () => {
           </p>
         </div>
         <div className='about-image'>
-          <Flickity
-            className={'flickity-carousel'}
-            elementType={'div'}
-            options={flickityOptions}
-            disableImagesLoaded
-            reloadOnUpdate
-            static
-          >
-            <img src="https://placehold.co/600x400" alt="Tim Beck" />
-            <img src="https://placehold.co/600x400" alt="Tim Beck" />
-            <img src="https://placehold.co/600x400" alt="Tim Beck" />
-          </Flickity>
+          <EmblaCarousel />
         </div>
       </section>
     </>
