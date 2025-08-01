@@ -1,11 +1,11 @@
 import { useCallback } from 'react';
-import useEmblaCarousel, {
-  type UseEmblaCarouselType
-} from 'embla-carousel-react';
+import useEmblaCarousel from 'embla-carousel-react';
 import Fade from 'embla-carousel-fade';
 import capri from '../../assets/tim_capri.jpeg';
 import kananaskis from '../../assets/tim_kananaskis.jpeg';
-import duomo from '../../assets/tim_duomo.jpeg';
+import pensacola from '../../assets/tim_pensacola.jpeg';
+import leftArrow from '../../assets/left-arrow.svg';
+import rightArrow from '../../assets/right-arrow.svg';
 import './style.css';
 
 export function EmblaCarousel() {
@@ -30,15 +30,15 @@ export function EmblaCarousel() {
             <img className="slide-image" src={kananaskis} alt="Me in Canada near Banff" />
           </div>
           <div className="embla__slide">
-            <img className="slide-image" src={duomo} alt="Me in Milan at the Duomo" />
+            <img className="slide-image" src={pensacola} alt="Me in Pensacola on Blackwater Bay" />
           </div>
         </div>
       </div>
       <button className="embla__prev" onClick={scrollPrev}>
-        Prev
+        <img src={leftArrow} alt="Previous slide" />
       </button>
       <button className="embla__next" onClick={scrollNext}>
-        Next
+        <img src={rightArrow} alt="Next slide" />
       </button>
     </div>
   )
