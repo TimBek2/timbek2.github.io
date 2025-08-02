@@ -10,7 +10,7 @@ export const Contact = () => {
     if (!form.current) return;
 
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+      .sendForm('service_0zr62jp', 'YOUR_TEMPLATE_ID', form.current, {
         publicKey: 'VMqJmhi8eYhbXp0OM',
       })
       .then(
