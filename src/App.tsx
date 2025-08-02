@@ -3,6 +3,7 @@ import Hero from './components/hero'
 import About from './components/about'
 import SkillLogos from './components/skillLogos';
 import Experience from './components/experience'
+import Contact from './components/contact';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       </div>
       <SkillLogos />
       <Experience />
+      <Contact />
     </>
   )
 }
