@@ -1,7 +1,11 @@
-import {useRef} from 'react';
+import {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
+import './style.css';
 
 export const Contact = () => {
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<boolean>(false);
+  const [submitted, setSubmitted] = useState<boolean>(false);
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -15,27 +19,53 @@ export const Contact = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          setSubmitted(true);
+          setSuccess(true);
+          setError(null);
         },
         (error) => {
+          setSubmitted(true);
+          setSuccess(false);
+          setError('Failed to send message. Please try again later.');
           console.log('FAILED...', error.text);
         },
       );
   };
 
   return (
-    <>
-      <p>If you want to get in touch, drop me a link!</p>
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>
-    </>
+    <section className="contact">
+      <div className='contact-image'>
+        <div className="paperplane">
+          <div className="plane">
+            <div className="wingRight"></div>
+            <div className="wingLeft"></div>
+            <div className="bottom"></div>
+            <div className="top"></div>
+            <div className="middle"></div>
+          </div>
+          <div className="clouds">
+            <div className="cloudOne"></div>
+            <div className="cloudTwo"></div>
+            <div className="cloudThree"></div>
+          </div>
+        </div>
+      </div>
+      <div className='contact-form-wrapper'>
+        <p className="contact-subtitle">Drop me a link!</p>
+        <h2>Contact Me</h2>
+        <form className="contact-form" ref={form} onSubmit={sendEmail}>
+          <label htmlFor='name'>Name</label>
+          <input type="text" name="name" autoComplete='name' id='name' placeholder="What's your name?" />
+          <label htmlFor='email'>Email</label>
+          <input type="email" name="email" autoComplete='email' id='email' placeholder="What's your email?" />
+          <label htmlFor='message'>Message</label>
+          <textarea name="message" id='message' placeholder="What's up?" />
+          <input type="submit" value="Send" disabled={submitted} />
+        </form>
+        {success && <p className="success">Message sent! I'll get back to you soon!</p>}
+        {error && <p className="error">{error}</p>}
+      </div>
+    </section>
   );
 };
 

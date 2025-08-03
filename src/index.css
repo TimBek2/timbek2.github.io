@@ -6,9 +6,9 @@ body {
   --text: #c0caf5;
   --link-color: #b4f9f8;
   --link-hover: #73daca;
-  --button-bg: #646cff;
+  --button-bg: #2ac3de;
   --button-click: #7aa2f7;
-  --button-hover: #2ac3de;
+  --button-hover: #646cff;
   --tan: #cfc9c2;
   margin: 0;
   background-color: var(--background);
