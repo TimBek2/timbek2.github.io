@@ -1,6 +1,7 @@
 import {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import './style.css';
+import './airplane-style.css';
 
 export const Contact = () => {
   const [error, setError] = useState<string | null>(null);
