@@ -52,4 +52,8 @@
   .work-icon {
     width: 100%;
   }
+
+  .resume-link {
+    text-align: center;
+  }
 }

@@ -33,22 +33,13 @@ const Experience = () => {
             </ul>
           </VerticalTimelineElement>
         ))}
-        {/* <VerticalTimelineElement
-          className="vertical-timeline-element-work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="2011 - present"
-          iconStyle={{ background: 'none', boxShadow: "0 0 0 4px #bb9af7" }}
-          icon={<img src={hubbleContacts} className="work-icon" alt="Shift Lab Logo" />}
-          iconClassName=""
-        >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-          </p>
-        </VerticalTimelineElement> */}
       </VerticalTimeline>
+      <p className="resume-link">
+        If you want to see my full resume, <a
+        href="https://docs.google.com/document/d/1DehDlFKRmYcg4Nvn7XKG4kk6fenEstuRYKh0RV4TSZk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+          take a look!
+        </a>
+      </p>
     </section>
   );
 }
