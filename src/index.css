@@ -22,12 +22,7 @@ body {
   }
 }
 
-/* @font-face {
-  font-family: 'Coolvetica';
-  src: url('./fonts/Coolvetica\ Rg.otf') format('otf');
-  font-weight: normal;
-  font-style: normal;
-} */
+/* License provided from MyFonts.com */
 @font-face {
   font-family: "CoolveticaRegular";
   src:  url('./fonts/font.woff2') format('woff2'),
