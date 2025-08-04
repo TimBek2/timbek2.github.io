@@ -1,9 +1,11 @@
 .typewriter-text {
-  font-family: 'Courier New', Courier, monospace;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid black;
   animation: blink 0.75s step-end infinite;
+  border-right: 2px solid black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .typewriter-cursor {
   display: inline-block;

@@ -1,6 +1,6 @@
 .hero {
-  padding: 20px;
-  margin-bottom: 20px;
   border-radius: 8px;
-  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: start;
 }
