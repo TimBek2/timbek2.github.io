@@ -22,8 +22,22 @@ body {
   }
 }
 
+/* @font-face {
+  font-family: 'Coolvetica';
+  src: url('./fonts/Coolvetica\ Rg.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+  font-family: "CoolveticaRegular";
+  src:  url('./fonts/font.woff2') format('woff2'),
+        url('./fonts/font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'CoolveticaRegular', Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
