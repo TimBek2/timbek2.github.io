@@ -42,3 +42,11 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .navigation {
+    .nav-links {
+      padding-left: 30px;
+    }
+  }
+}
