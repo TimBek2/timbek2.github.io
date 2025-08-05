@@ -11,15 +11,16 @@
     box-sizing: border-box;
     display: inline-block;
     max-width: 780px;
+    margin-right: 5%;
     padding: 20px;
-    width: 60%;
+    flex-grow: 2;
   }
 
   .about-image {
     border-radius: 8px;
     display: inline-block;
     max-width: 440px;
-    width: 34%;
+    flex-grow: 1;
 
     .embla {
       border-radius: inherit;
@@ -77,15 +78,22 @@
   }
 }
 
+@media (max-width: 1340px) {
+  .about {
+    margin: 0 20px;
+  }
+}
+
 @media (max-width: 1110px) {
   .about {
     flex-direction: column;
     align-items: center;
 
     .about-content {
+      margin-right: 0;
+      max-width: 95%;
       order: 2;
       width: 95%;
-      max-width: 95%;
     }
 
     .about-image {

@@ -5,3 +5,9 @@
   padding: 20px;
   text-align: start;
 }
+
+@media (max-width: 1110px) {
+  .hero {
+    text-align: center;
+  }
+}
