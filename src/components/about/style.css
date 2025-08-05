@@ -8,6 +8,7 @@
   .about-content {
     background-color: var(--section-bg);
     border-radius: 8px;
+    box-sizing: border-box;
     display: inline-block;
     max-width: 780px;
     padding: 20px;
@@ -83,8 +84,8 @@
 
     .about-content {
       order: 2;
-      width: 100%;
-      max-width: 100%;
+      width: 95%;
+      max-width: 95%;
     }
 
     .about-image {
