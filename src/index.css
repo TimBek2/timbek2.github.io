@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   --background: #1a1b26;
   --h-line: #a9b1d6;

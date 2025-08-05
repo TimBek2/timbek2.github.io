@@ -1,4 +1,5 @@
 import './App.css'
+import Navigation from './components/navigation';
 import Hero from './components/hero'
 import About from './components/about'
 import SkillLogos from './components/skillLogos';
@@ -8,6 +9,7 @@ import Contact from './components/contact';
 function App() {
   return (
     <>
+      <Navigation />
       <div className='bg-wrapper'>
         <Hero />
         <About />

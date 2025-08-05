@@ -1,4 +1,5 @@
 .contact {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -23,18 +24,20 @@
 
       input,
       textarea {
+        background-color: var(--section-bg);
         border-radius: 4px;
         border: 1px solid #ccc;
         box-sizing: border-box;
-        background-color: var(--section-bg);
         color: #fff;
         display: block;
         margin-bottom: 15px;
         padding: 10px;
-        width: 75%;
+        width: 100%;
 
         &::placeholder {
           color: var(--text);
+          font-family: 'CoolveticaRegular', Helvetica, sans-serif;
+          font-size: 1.2rem;
         }
       }
 
@@ -56,6 +59,32 @@
           cursor: not-allowed;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    margin: 0 20px 20px;
+  }
+}
+
+@media (max-width: 920px) {
+  .contact {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 891px) {
+  .contact {
+    .contact-image {
+      margin-right: 0;
+    }
+    .contact-form-wrapper {
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      max-width: none;
+      width: 95%;
     }
   }
 }

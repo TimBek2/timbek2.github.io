@@ -36,11 +36,12 @@ const experiences: Experience[] = [
     location: "Norwalk, CT",
     icon: juiceCg,
     iconClass: 'square',
-    date: "Feb 2021 - Feb 2022",
+    date: "Feb 2021 - Feb 2022, Dec 2024 - Mar 2025",
     points: [
       "Weekend/personal project to help a colleague with planning oversight, scope advice, and timeline and staffing recommendations for a full service creative agency",
       "Oversaw a 4 person technical team to build a bespoke real estate and art gallery platform that consisted of an admin interface for adding galleries, artists, homes, architects, etc",
       "Also oversaw building of custom front end sites in PHP for each project, and efficiently use high quality images to maintain performance",
+      "Second stint involved planning and project management for an integrated CMS and store finder for a premium marijuana brand"
     ],
   },
   {

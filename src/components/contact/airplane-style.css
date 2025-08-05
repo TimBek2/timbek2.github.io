@@ -1,3 +1,7 @@
+.contact-image {
+  margin-bottom: 20px;
+}
+
 .paperplane {
   position: relative;
   overflow: hidden;
@@ -135,4 +139,17 @@
   left:-20px;
   top:12.5px;
   box-shadow: 65px 0 #fff;
+}
+
+@media (max-width: 1024px) {
+  .contact-image {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .paperplane {
+    width: 360px;
+    height: 360px;
+  }
 }

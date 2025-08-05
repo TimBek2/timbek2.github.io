@@ -1,6 +1,13 @@
 .hero {
   border-radius: 8px;
   margin-bottom: 20px;
+  margin-top: 56px;
   padding: 20px;
   text-align: start;
+}
+
+@media (max-width: 1110px) {
+  .hero {
+    text-align: center;
+  }
 }
