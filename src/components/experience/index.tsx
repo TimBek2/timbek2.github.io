@@ -36,7 +36,7 @@ const Experience = () => {
       </VerticalTimeline>
       <p className="resume-link">
         If you want to see my full resume, <a
-        href="https://docs.google.com/document/d/1DehDlFKRmYcg4Nvn7XKG4kk6fenEstuRYKh0RV4TSZk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+        href="https://docs.google.com/document/d/1DehDlFKRmYcg4Nvn7XKG4kk6fenEstuRYKh0RV4TSZk/" target="_blank" rel="noopener noreferrer">
           take a look!
         </a>
       </p>
