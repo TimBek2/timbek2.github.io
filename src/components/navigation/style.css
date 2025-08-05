@@ -1,0 +1,39 @@
+.navigation {
+  background-color: #414868;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-logo {
+    color: var(--text);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    min-width: 40%;
+
+    .nav-link {
+      a {
+        color: var(--text);
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+
+        &:hover {
+          color: var(--link-hover);
+        }
+      }
+    }
+  }
+}
