@@ -153,3 +153,17 @@
     height: 360px;
   }
 }
+
+@media (max-width: 768px) {
+  .paperplane {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 420px) {
+  .paperplane {
+    width: 330px;
+    height: 330px;
+  }
+}

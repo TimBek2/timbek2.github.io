@@ -88,3 +88,9 @@
     }
   }
 }
+
+@media (max-width: 540px) {
+  .contact .contact-form-wrapper .contact-form input[type='submit'] {
+    width: 40%;
+  }
+}
