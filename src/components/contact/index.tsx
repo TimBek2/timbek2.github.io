@@ -34,7 +34,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <div className='contact-image'>
         <div className="paperplane">
           <div className="plane">

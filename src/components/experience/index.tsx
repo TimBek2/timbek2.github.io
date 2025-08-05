@@ -8,7 +8,7 @@ import './style.css';
 
 const Experience = () => {
   return (
-    <section className="experience">
+    <section className="experience" id="experience">
       <h2>Experience</h2>
       <VerticalTimeline lineColor={'#bb9af7'}>
         {experiences.map((experience, index:number) => (
