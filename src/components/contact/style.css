@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: nowrap;
-  margin: 0 20px 20px;
+  margin-bottom: 20px;
 
   .contact-form-wrapper {
     background-color: #006c86;
@@ -60,6 +60,12 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    margin: 0 20px 20px;
   }
 }
 

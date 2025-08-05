@@ -1,6 +1,5 @@
 .contact-image {
   margin-bottom: 20px;
-  margin-right: 20px;
 }
 
 .paperplane {
@@ -140,4 +139,10 @@
   left:-20px;
   top:12.5px;
   box-shadow: 65px 0 #fff;
+}
+
+@media (max-width: 1024px) {
+  .contact-image {
+    margin-right: 20px;
+  }
 }
