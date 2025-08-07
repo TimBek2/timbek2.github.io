@@ -36,7 +36,7 @@ const Experience = () => {
       </VerticalTimeline>
       <p className="resume-link">
         If you want to see my full resume, <a
-        href="../../assets/Tim_Beck_Resume_8-1-2025.pdf" download={true}>
+        href='/Tim_Beck_Resume_8-6-2025.pdf' download={true}>
           take a look!
         </a>
       </p>
