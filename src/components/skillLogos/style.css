@@ -6,7 +6,7 @@
     border-radius: 8px;
     display: flex;
     justify-content: center;
-    height: 210px;
+    height: 200px;
 
     &.rails-logo {
       align-self: center;
@@ -15,6 +15,17 @@
 
     img {
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-logos {
+    gap: 10px;
+    .tilt {
+      height: 110px;
+      max-width: 100%;
+      width: auto;
     }
   }
 }

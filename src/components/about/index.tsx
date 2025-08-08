@@ -1,48 +1,4 @@
-import { useCallback } from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
-import Fade from 'embla-carousel-fade';
-import capri from '../../assets/tim_capri.jpeg';
-import kananaskis from '../../assets/tim_kananaskis.jpeg';
-import pensacola from '../../assets/tim_pensacola.jpeg';
-import leftArrow from '../../assets/left-arrow.svg';
-import rightArrow from '../../assets/right-arrow.svg';
 import './style.css';
-
-export function EmblaCarousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({loop: true, watchDrag: false}, [Fade()])
-
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev()
-  }, [emblaApi])
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext()
-  }, [emblaApi])
-
-  return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
-          <div className="embla__slide">
-            <img className="slide-image" src={capri} alt="Me in Anacapri" />
-          </div>
-          <div className="embla__slide">
-            <img className="slide-image" src={kananaskis} alt="Me in Canada near Banff" />
-          </div>
-          <div className="embla__slide">
-            <img className="slide-image" src={pensacola} alt="Me in Pensacola on Blackwater Bay" />
-          </div>
-        </div>
-      </div>
-      <button className="embla__prev" onClick={scrollPrev}>
-        <img src={leftArrow} alt="Previous slide" />
-      </button>
-      <button className="embla__next" onClick={scrollNext}>
-        <img src={rightArrow} alt="Next slide" />
-      </button>
-    </div>
-  )
-}
 
 const About = () => {
   return (
@@ -62,9 +18,6 @@ const About = () => {
         <p>
           I've also built a few cutting boards and a coffee table, with some more ideas that are probably too ambitious.
         </p>
-      </div>
-      <div className='about-image'>
-        <EmblaCarousel />
       </div>
     </section>
   );

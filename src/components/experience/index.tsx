@@ -10,6 +10,12 @@ const Experience = () => {
   return (
     <section className="experience" id="experience">
       <h2>Experience</h2>
+      <p className="resume-link">
+        If you want to see my full resume, <a
+        href='/Tim_Beck_Resume_8-6-2025.pdf' download={true}>
+          take a look!
+        </a>
+      </p>
       <VerticalTimeline lineColor={'#bb9af7'}>
         {experiences.map((experience, index:number) => (
           <VerticalTimelineElement
@@ -34,12 +40,6 @@ const Experience = () => {
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
-      <p className="resume-link">
-        If you want to see my full resume, <a
-        href="https://docs.google.com/document/d/1DehDlFKRmYcg4Nvn7XKG4kk6fenEstuRYKh0RV4TSZk/" target="_blank" rel="noopener noreferrer">
-          take a look!
-        </a>
-      </p>
     </section>
   );
 }
