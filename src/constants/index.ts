@@ -23,9 +23,9 @@ const experiences: Experience[] = [
     iconClass: '',
     date: "Apr 2019 - Sept 2023",
     points: [
-      "Initially worked on a custom Shopify front end that integrated with a Rails back end for data management",
-      "Helped design and implement transition to Shopify as a headless CMS, a Node/React-based front end, and maintaining legacy Rails app for database purposes",
+      "Implemented a plan to transition from a custom Shopify front end to a headless Shopify CMS with a React front end, integrating a Rails API for database management",
       "Became one of two lead front end developers, led the front end efforts to develop and launch a new product line, prescription glasses and sunglasses",
+      "Built a Customer Portal interface that involved a bespoke integration of Shopify and Stripe APIs to display Customer data and allow management of subscriptions and orders",
       "Personally handled all intake pages, analytics, accessibility, and internationalization"
     ],
   },
