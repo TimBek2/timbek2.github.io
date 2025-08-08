@@ -24,11 +24,8 @@
     gap: 10px;
     .tilt {
       height: 110px;
+      max-width: 100%;
       width: auto;
-
-      &.rails-logo {
-        height: 110px;
-      }
     }
   }
 }
