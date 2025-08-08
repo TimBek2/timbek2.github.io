@@ -23,10 +23,11 @@
   .skill-logos {
     gap: 10px;
     .tilt {
-      height: 150px;
+      height: 110px;
+      width: auto;
 
       &.rails-logo {
-        height: 90px;
+        height: 110px;
       }
     }
   }
