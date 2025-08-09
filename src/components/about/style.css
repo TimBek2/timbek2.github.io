@@ -4,6 +4,7 @@
   justify-content: center;
   flex-wrap: nowrap;
   margin-bottom: 20px;
+  scroll-margin-top: 75px;
 
   .about-content {
     background-color: var(--section-bg);
