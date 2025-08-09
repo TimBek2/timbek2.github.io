@@ -6,6 +6,7 @@
   align-items: center;
   flex-wrap: nowrap;
   margin-bottom: 20px;
+  scroll-margin-top: 75px;
 
   .contact-form-wrapper {
     background-color: #006c86;
