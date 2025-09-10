@@ -56,11 +56,11 @@ export const Contact = () => {
         <h2>Contact Me</h2>
         <form className="contact-form" ref={form} onSubmit={sendEmail}>
           <label htmlFor='name'>Name</label>
-          <input type="text" autoComplete='name' id='name' placeholder="What's your name?" />
+          <input type="text" id='name' name='name' autoComplete='name' placeholder="What's your name?" />
           <label htmlFor='email'>Email</label>
-          <input type="email" autoComplete='email' id='email' placeholder="What's your email?" />
+          <input type="email" id='email' name='email' autoComplete='email' placeholder="What's your email?" />
           <label htmlFor='message'>Message</label>
-          <textarea id='message' placeholder="What's up?" />
+          <textarea id='message' name="message" placeholder="What's up?" />
           <input type="submit" value="Send" disabled={submitted} />
         </form>
         {success && <p className="success">Message sent! I'll get back to you soon!</p>}
