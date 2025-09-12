@@ -12,7 +12,7 @@ const Experience = () => {
       <h2>Experience</h2>
       <p className="resume-link">
         If you want to see my full resume, <a
-        href='/Tim_Beck_Resume_8-6-2025.pdf' download={true}>
+        href='/Tim_Beck_Resume_09-12-2025.pdf' download={true}>
           take a look!
         </a>
       </p>
